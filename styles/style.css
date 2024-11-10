@@ -1,0 +1,33 @@
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+  }
+
+  button.disabled{
+    background-color: #d5d6d9;
+    color: #afb3b6;
+  }
+  .spinner {
+    border: 8px solid rgba(14,122,129,0.1);
+    border-top: 8px solid #0E7A81;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#category-container button.active{
+  border: 1px solid #0E7A81;
+  background-color: rgba(14, 122, 129, 0.1);
+}
